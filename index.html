@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Frontend Boilerplate</title>
+    <title>Tech Academy - Best Learning Site</title>
 
     <!-- Favicon -->
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
@@ -66,41 +66,201 @@
         </div>
       </nav>
     </header>
- 
-<!-- HERO SECTION -->
-  <section class="hero-section">
-    <!-- Gradient Overlay -->
-    <div class="hero-gradient"></div>
 
-    <!-- Content -->
-    <div class="hero-content container">
-      <div class="row align-items-center">
-        
-        <!-- Left: Hero Text -->
-        <div class="col-lg-6">
-          <div class="hero-text pe-lg-5">
-            <p class="text-primary fw-semibold">The Leader in Online Learning</p>
-            <h1 class="display-5">Master the Skills to Drive your Career</h1>
-            <p class="mt-3">Join thousands of learners worldwide and gain the skills you need to succeed in today’s job market.</p>
-            
-            <!-- Search Bar -->
-            <form class="d-flex mt-4" role="search">
-              <input class="form-control me-2 shadow-sm" type="search" placeholder="Search courses..." aria-label="Search">
-              <button class="btn btn-enroll px-4" type="submit">Search</button>
-            </form>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <!-- Gradient Overlay -->
+      <div class="hero-gradient"></div>
+
+      <!-- Content -->
+      <div class="hero-content container">
+        <div class="row align-items-center">
+          <!-- Left: Hero Text -->
+          <div class="col-lg-6">
+            <div class="hero-text pe-lg-5">
+              <p class="hero-sub-short-text fw-semibold">
+                The Leader in Online Learning
+              </p>
+              <h1 class="display-5">Master the Skills to Drive your Career</h1>
+              <p class="mt-3">
+                Join thousands of learners worldwide and gain the skills you
+                need to succeed in today’s job market.
+              </p>
+
+              <!-- Search Bar -->
+              <form class="d-flex mt-4" role="search">
+                <input
+                  class="form-control me-2 shadow-sm"
+                  type="search"
+                  placeholder="Search courses..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-enroll px-4" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Side: Animated Info Box -->
+          <div class="col-lg-6 text-center position-relative">
+            <div
+              class="animated-stars position-absolute top-0 start-0 w-100 h-100"
+            >
+              <i class="fa-solid fa-star star-icon star-blue"></i>
+              <i class="fa-solid fa-star star-icon star-red"></i>
+              <i class="fa-solid fa-star star-icon star-yellow"></i>
+              <i class="fa-solid fa-star star-icon star-purple"></i>
+            </div>
+
+            <div
+              class="info-box bg-white p-4 rounded-4 border border-primary d-inline-block shadow-sm position-relative"
+              style="z-index: 2"
+            >
+              <div class="mb-2">
+                <div
+                  class="bg-primary text-white d-inline-flex align-items-center justify-content-center rounded-circle"
+                  style="width: 40px; height: 40px"
+                >
+                  ✓
+                </div>
+              </div>
+              <h5 class="text-primary mb-1 fw-semibold">Accredited Courses</h5>
+              <p class="text-muted mb-0 small">
+                One subscription – All content.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Right: Visible Image -->
-        <div class="col-lg-6 text-center">
-          <!-- <img src="https://images.unsplash.com/photo-1581092160612-3c1c8e5d12c8" alt="Learning Illustration" class="hero-img"> -->
+    <!-- Course Categories Start -->
+    <div class="course-categories-section" id="course-categories">
+      <div class="container">
+        <div class="section-title">
+          <h6>Browse Categories</h6>
+          <h2>Popular Topics To Learn</h2>
         </div>
+        <div class="row g-4 course-category-type">
+          <!-- Card 1 -->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="category-card position-relative">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-code category-icon"></i>
+                <h5 class="category-title">Web Development</h5>
+                <p class="category-count">120 Courses</p>
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h5>Web Development</h5>
+                  <p class="text-center">
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Duplicate for more cards with different content -->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="category-card position-relative">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-palette category-icon"></i>
+                <h5 class="category-title">UI/UX Design</h5>
+                <p class="category-count">80 Courses</p>
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h5>UI/UX Design</h5>
+                  <p class="text-center">
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 -->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="category-card position-relative">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-laptop-code category-icon"></i>
+                <h5 class="category-title">Programming</h5>
+                <p class="category-count">150 Courses</p>
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h5>Programming</h5>
+                  <p class="text-center">
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="category-card position-relative">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-chart-line category-icon"></i>
+                <h5 class="category-title">Marketing</h5>
+                <p class="category-count">90 Courses</p>
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h5>Marketing</h5>
+                  <p class="text-center">
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="category-card position-relative">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-database category-icon"></i>
+                <h5 class="category-title">Data Science</h5>
+                <p class="category-count">60 Courses</p>
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h5>Data Science</h5>
+                  <p class="text-center">
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="category-card position-relative">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-camera category-icon"></i>
+                <h5 class="category-title">Photography</h5>
+                <p class="category-count">70 Courses</p>
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h5>Photography</h5>
+                  <p class="text-center">
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add 3 more cards similarly... -->
+        </div>
       </div>
     </div>
-  </section>
-
-
+    <!-- Course Categories End -->
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
