@@ -7,7 +7,7 @@
   --primary-color: #2878eb;
   --button-color: #f14d5d;
   --sub-text-color: #f14d5d;
-  --sub-title-color: #120F2D;
+  --sub-title-color: #120f2d;
 }
 /* Reset Default Browser Styles */
 * {
@@ -119,26 +119,25 @@ textarea:focus {
   outline: none;
 }
 
-
 /* ======================Common Section Styles Start====================== */
-#course-categories{
-    padding: 50px 0;;
+#course-categories, #featured-course-section {
+  padding: 50px 0;
 }
-.section-title{
-    text-align: center;
-    margin-bottom: 40px;
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.section-title h6{
-    margin-bottom: 0;
-    color:var(--sub-text-color)
+.section-title h6 {
+  margin-bottom: 0;
+  color: var(--sub-text-color);
 }
-.section-title h2{ 
-    color:var(--sub-title-color); 
-    margin: 0 0 -10px 0;
-    font-size: 39px;
-    font-weight: 800;
-    line-height: 46px;
-    letter-spacing: -.2px;
+.section-title h2 {
+  color: var(--sub-title-color);
+  margin: 0 0 -10px 0;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: -0.2px;
 }
 /* ======================Common Section Styles End====================== */
 /* ======================Navbar Start====================== */
@@ -202,12 +201,22 @@ textarea:focus {
 }
 
 .hero-text h1 {
-  font-weight: 700;
-  color: #222;
+  color: #120f2d;
+  margin: 0 0 15px 0;
+  font-size: 49px;
+  font-weight: 800;
+  line-height: 60px;
 }
-.hero-sub-short-text{
-    color: var(--sub-text-color);
-} 
+.hightlight-text {
+  color: var(--primary-color);
+}
+.hero-sub-short-text {
+  color: var(--sub-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  margin: 0 0 13px 0;
+}
 
 .hero-img {
   max-width: 100%;
@@ -289,7 +298,8 @@ textarea:focus {
    Hero Area End
 =================================================== */
 /* =================Course Categories Section Start============================ */
-.course-categories-section{}
+.course-categories-section {
+}
 
 .category-card {
   background: #fff;
@@ -350,17 +360,78 @@ textarea:focus {
   align-items: center;
 }
 .overlay-content i {
-   background-color: rgba(255, 255, 255, 0.5);
-   display: inline-block;
-   padding: 8px 20px;
-   border-radius: 5px;
-   color:#000;
-   transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #000;
+  transition: 0.3s;
 }
-.overlay-content i:hover{
-   background-color:  var(--sub-text-color); 
-   color:#fff;
+.overlay-content i:hover {
+  background-color: var(--sub-text-color);
+  color: #fff;
 }
-
 
 /* =================Course Categories Section End============================ */
+/* =================Features Section Start============================ */
+.featured-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #120f2d;
+  margin-bottom: 0;
+}
+
+.featured-logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+/* .featured-logo-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 80px;
+} */
+
+.featured-logo-track {
+  transition: transform 0.6s ease-in-out;
+}
+
+.logo-item {
+  width: 160px;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  opacity: 0.9;
+  filter: grayscale(100%);
+}
+
+/* .logo-item {
+  width: 140px;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  opacity: 0.8;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  vertical-align: middle;
+} */
+
+.logo-item:hover {
+  filter: none;
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* =================Features Section End============================ */
+/* =================Featured Course Section Start============================ */
+.featured-course-section .section-title{
+    text-align: left;
+}
+/* =================Featured Course Section End============================ */

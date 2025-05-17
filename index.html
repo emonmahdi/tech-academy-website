@@ -81,7 +81,10 @@
               <p class="hero-sub-short-text fw-semibold">
                 The Leader in Online Learning
               </p>
-              <h1 class="display-5">Master the Skills to Drive your Career</h1>
+              <h1 class="main-title">
+                Master the Skills to Drive
+                <span class="hightlight-text"> your Career</span>
+              </h1>
               <p class="mt-3">
                 Join thousands of learners worldwide and gain the skills you
                 need to succeed in today’s job market.
@@ -262,6 +265,63 @@
     </div>
     <!-- Course Categories End -->
 
+    <!-- Featured Section Start -->
+    <section id="featured-section">
+      <div class="container">
+        <div class="row align-items-center featured-section py-5">
+          <div class="col-md-2 d-flex align-items-center">
+            <h3 class="featured-title">Featured In</h3>
+          </div>
+          <div class="col-md-10">
+            <div class="featured-logo-wrapper overflow-hidden">
+              <div class="featured-logo-track d-flex" id="logoTrack">
+                <img
+                  src="assets/images/features/logo1.png"
+                  class="img-fluid logo-item"
+                  alt=""
+                />
+                <img
+                  src="assets/images/features/logo2.png"
+                  class="img-fluid logo-item"
+                  alt=""
+                />
+                <img
+                  src="assets/images/features/logo3.png"
+                  class="img-fluid logo-item"
+                  alt=""
+                />
+                <img
+                  src="assets/images/features/logo4.png"
+                  class="img-fluid logo-item"
+                  alt=""
+                />
+                <img
+                  src="assets/images/features/logo5.png"
+                  class="img-fluid logo-item"
+                  alt=""
+                />
+                <img
+                  src="assets/images/features/logo3.png"
+                  class="img-fluid logo-item"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Section End -->
+    <!-- Featured Course Section Start -->
+     <section class="featured-course-section" id="featured-course-section">
+      <div class="container">
+        <div class="section-title">
+          <h6>Featured Courses</h6>
+          <h2>Pick a Course to Get Started</h2>
+        </div>
+      </div>
+     </section>
+    <!-- Featured Course Section End -->
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
       <p>&copy; 2025 MyBrand. All Rights Reserved.</p>
@@ -270,5 +330,25 @@
     <!-- Bootstrap JS & Custom JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const track = document.getElementById("logoTrack");
+      let interval = 3000;
+
+      setInterval(() => {
+        const firstLogo = track.children[0];
+        const logoWidth =
+          firstLogo.offsetWidth +
+          parseInt(getComputedStyle(firstLogo).marginRight);
+
+        track.style.transition = "transform 0.6s ease-in-out";
+        track.style.transform = `translateX(-${logoWidth}px)`;
+
+        setTimeout(() => {
+          track.style.transition = "none";
+          track.appendChild(firstLogo);
+          track.style.transform = "translateX(0)";
+        }, 600);
+      }, interval);
+    </script>
   </body>
 </html>
