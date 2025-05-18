@@ -120,7 +120,7 @@ textarea:focus {
 }
 
 /* ======================Common Section Styles Start====================== */
-#course-categories, #featured-course-section {
+#course-categories, #featured-course-section, #counter-section {
   padding: 50px 0;
 }
 .section-title {
@@ -656,6 +656,21 @@ textarea:focus {
 }
 
 /* =================Membership Section End============================ */
+/* =================Counter Section Start============================ */
+.counter-section .section-title{
+  margin-bottom: 80px;
+}
+.single-counter-item{
+  text-align: center;
+  border-right: 2px solid #ddd;
+}
+.single-counter-item h2{
+  margin-bottom: 5px;
+  color:#120F2D;
+  font-size: 40px;
+  font-weight: 700;
+}
+/* =================Counter Section End============================ */
 /* =================Footer Section Start============================ */
 .footer-section {
   background-color: #1c1f26;

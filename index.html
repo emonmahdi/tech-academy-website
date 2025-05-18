@@ -626,8 +626,10 @@
               <h5>Membership</h5>
               <h2>Start your Learning Journey Today!</h2>
               <p>with a free 7-day trial, then $14.99/month.</p>
-              <div class="membership-sign-btn"> 
-                <a href="#" class="btn btn-enroll mt-3">Sign Up Now <i class="fa-solid fa-arrow-right-long"></i></a>
+              <div class="membership-sign-btn">
+                <a href="#" class="btn btn-enroll mt-3"
+                  >Sign Up Now <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -684,6 +686,42 @@
     </section>
 
     <!-- Membership section end -->
+    <!-- counter section start -->
+    <section id="counter-section" class="counter-section">
+      <div class="container">
+        <div class="section-title">
+          <h6>Achivments</h6>
+          <h2>Strength in Numbers</h2>
+        </div>
+        <div class="row text-center">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>10k+</h2>
+              <p>Learners & counting</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>50+</h2>
+              <p>Total Courses</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>40+</h2>
+              <p>Total Teachers</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>80%+</h2>
+              <p>Successful Students</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter section end -->
     <!-- Footer -->
     <footer class="footer-section position-relative text-light py-5">
       <!-- Optional background image -->
@@ -778,5 +816,41 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/logoSlider.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      // Function to animate counters
+      function animateCounter(element, endValue, duration = 2000) {
+        let startValue = 0;
+        let increment = endValue / (duration / 16); // ~60fps
+        let current = startValue;
+
+        const counter = setInterval(() => {
+          current += increment;
+          if (current >= endValue) {
+            element.textContent = formatValue(endValue);
+            clearInterval(counter);
+          } else {
+            element.textContent = formatValue(Math.floor(current));
+          }
+        }, 16); // ~60 times per second
+      }
+
+      // Format function to handle values like 10k+, 80%+
+      function formatValue(value) {
+        if (value >= 1000) return Math.floor(value / 1000) + "k+";
+        if (value >= 80 && value < 100) return value + "%";
+        return value + "+";
+      }
+
+      // Start animation when DOM is ready
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".single-counter-item h2");
+
+        const values = [10000, 50, 40, 80]; // corresponding to 10k+, 50+, 40+, 80%+
+
+        counters.forEach((counter, index) => {
+          animateCounter(counter, values[index]);
+        });
+      });
+    </script>
   </body>
 </html>
