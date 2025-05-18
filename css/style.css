@@ -1004,6 +1004,24 @@ textarea:focus {
 }
 
 
+/* Responsive Stack on Small Devices */
+@media (max-width: 576px) {
+  .subscriber-mail-box {
+    flex-direction: column;
+  }
+
+  .subscriber-mail-box input[type="email"],
+  .subscriber-mail-box button {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0;
+  }
+
+  .subscriber-mail-box button {
+    border-top: 1px solid #ddd;
+  }
+}
+
 /* =================Subscriber-area Section End============================ */
 /* =================Footer Section Start============================ */
 .footer-section {
