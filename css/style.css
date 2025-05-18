@@ -120,7 +120,9 @@ textarea:focus {
 }
 
 /* ======================Common Section Styles Start====================== */
-#course-categories, #featured-course-section, #counter-section {
+#course-categories,
+#featured-course-section,
+#counter-section {
   padding: 50px 0;
 }
 .section-title {
@@ -147,12 +149,11 @@ textarea:focus {
   font-size: 1.5rem;
 }
 .logo-img {
-  height: 40px;          /* standard navbar height */
-  width: auto;           /* keep original aspect ratio */
-  max-width: 100%;       /* responsive inside container */
-  object-fit: contain;   /* prevent distortion */
+  height: 40px; /* standard navbar height */
+  width: auto; /* keep original aspect ratio */
+  max-width: 100%; /* responsive inside container */
+  object-fit: contain; /* prevent distortion */
 }
-
 
 .nav-link {
   color: #000;
@@ -438,10 +439,9 @@ textarea:focus {
 
 /* =================Features Section End============================ */
 /* =================Featured Course Section Start============================ */
-.featured-course-section .section-title{
-    text-align: left;
+.featured-course-section .section-title {
+  text-align: left;
 }
-
 
 .course-card img {
   height: 200px;
@@ -453,12 +453,12 @@ textarea:focus {
   transform: scale(1.05);
 }
 
-.course-icons-details span{
-    font-weight: bold;
+.course-icons-details span {
+  font-weight: bold;
 }
 
-.course-icons-details i{
-    color:var(--primary-color)
+.course-icons-details i {
+  color: var(--primary-color);
 }
 
 .course-card:hover {
@@ -513,7 +513,7 @@ textarea:focus {
 }
 
 .view-details-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -541,7 +541,6 @@ textarea:focus {
   border-color: var(--button-color);
 }
 
-
 .course-btns .btn-enroll {
   position: relative;
   display: inline-block;
@@ -559,43 +558,44 @@ textarea:focus {
   color: #fff;
 }
 
-.more-course-btn i, .membership-sign-btn i{
+.more-course-btn i,
+.membership-sign-btn i {
   margin-left: 5px;
   transition: 0.3s;
 }
-.more-course-btn:hover i, .membership-sign-btn:hover i{
+.more-course-btn:hover i,
+.membership-sign-btn:hover i {
   margin-left: 25px;
 }
 
 /* =================Featured Course Section End============================ */
 /* =================Membership Section Start============================ */
-.membership-section{ 
+.membership-section {
   overflow: hidden;
-   background: #f8f9fa;
-} 
- 
-/* Left column background */
-.left-column {
-  background: linear-gradient(125deg, #7057FA, #61B7FF);
-  color: #fff;
-  padding:80px 0;
+  background: #f8f9fa;
 }
 
+/* Left column background */
+.left-column {
+  background: linear-gradient(125deg, #7057fa, #61b7ff);
+  color: #fff;
+  padding: 80px 0;
+}
 
 /* Right column background */
 .right-column {
-  background-color: #120F2D;
-  padding-left: 3rem; 
-  padding:80px 0; 
+  background-color: #120f2d;
+  padding-left: 3rem;
+  padding: 80px 0;
 }
 .membership-section {
   width: 100%;
 }
-.left-membership-content{
+.left-membership-content {
   width: 70%;
-  margin:0 auto;
+  margin: 0 auto;
 }
- 
+
 /* Feature cards grid */
 .features-wrapper {
   display: grid;
@@ -612,39 +612,39 @@ textarea:focus {
 .single-mem-feature i {
   height: 50px;
   width: 50px;
-  background-color: #DDF6EF; 
+  background-color: #ddf6ef;
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
   font-size: 15px;
   color: #000;
 }
- 
+
 .features-wrapper .single-mem-feature:nth-child(1) i {
-  background-color: #DDF6EF;
-}
- 
-.features-wrapper .single-mem-feature:nth-child(2) i {
-  background-color: #FFE6E6;
-}
- 
-.features-wrapper .single-mem-feature:nth-child(3) i {
-  background-color: #E6F0FF;
-}
- 
-.features-wrapper .single-mem-feature:nth-child(4) i {
-  background-color: #FFF3CD;
+  background-color: #ddf6ef;
 }
 
-.single-mem-feature h4{
+.features-wrapper .single-mem-feature:nth-child(2) i {
+  background-color: #ffe6e6;
+}
+
+.features-wrapper .single-mem-feature:nth-child(3) i {
+  background-color: #e6f0ff;
+}
+
+.features-wrapper .single-mem-feature:nth-child(4) i {
+  background-color: #fff3cd;
+}
+
+.single-mem-feature h4 {
   margin-bottom: 0;
   font-size: 18px;
-  color:#120F2D;
+  color: #120f2d;
 }
-.single-mem-feature p{
+.single-mem-feature p {
   margin-bottom: 0;
-  font-size: 15px; 
-  color:#777;
+  font-size: 15px;
+  color: #777;
 }
 
 /* Responsive */
@@ -657,20 +657,129 @@ textarea:focus {
 
 /* =================Membership Section End============================ */
 /* =================Counter Section Start============================ */
-.counter-section .section-title{
+.counter-section .section-title {
   margin-bottom: 80px;
 }
-.single-counter-item{
+.single-counter-item {
   text-align: center;
   border-right: 2px solid #ddd;
 }
-.single-counter-item h2{
+.single-counter-item h2 {
   margin-bottom: 5px;
-  color:#120F2D;
+  color: #120f2d;
   font-size: 40px;
   font-weight: 700;
 }
 /* =================Counter Section End============================ */
+/* =================Testimonial Section Start============================ */
+/* .single-testimonial {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  height: 100%;
+}
+.reviews i {
+  color: #fbc02d;
+  margin-right: 3px;
+}
+.testimonial-footer img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.swiper {
+  padding: 20px 10px;
+} */
+/* ==== */
+.testimonials-section {
+  padding: 60px 0;
+}
+.testimonial-area {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+/* .single-testimonial {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;  
+} */
+ .single-testimonial {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ensures footer stays at bottom */
+  height: 100%;
+} 
+
+.reviews {
+  margin-bottom: 12px;
+}
+.reviews i {
+  color: #fbc02d;
+  margin-right: 4px;
+}
+
+.single-testimonial p {
+  flex: 1; /* grow to keep footer aligned */
+  margin: 0 0 18px 0;
+  line-height: 1.55;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.testimonial-footer h4{
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.testimonial-footer p{
+  margin-bottom: 0; 
+}
+.testimonial-footer img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.swiper {
+  padding: 30px 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 0px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+/* ====== */
+.swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.testimonial-slider .swiper-wrapper {
+  align-items: stretch;
+}
+
+
+
+/* =================Testimonial Section End============================ */
 /* =================Footer Section Start============================ */
 .footer-section {
   background-color: #1c1f26;
@@ -679,7 +788,7 @@ textarea:focus {
 }
 
 .footer-bg-img {
-  background-image: url('../assets/images/hero_area.png'); /* replace with your background image */
+  background-image: url("../assets/images/hero_area.png"); /* replace with your background image */
   background-size: cover;
   background-position: center;
   opacity: 0.08;
