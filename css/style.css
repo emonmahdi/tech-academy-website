@@ -123,8 +123,9 @@ textarea:focus {
 #course-categories,
 #featured-course-section,
 #counter-section,
-#trainer-section {
-  padding: 50px 0;
+#trainer-section,
+#blog-section {
+  padding: 60px 0;
 }
 .section-title {
   text-align: center;
@@ -307,8 +308,14 @@ textarea:focus {
    Hero Area End
 =================================================== */
 /* =================Course Categories Section Start============================ */
-/* .course-categories-section {
-} */
+.course-categories-section {
+  padding: 60px 0;
+  background: url('../assets/images/testimonial_bg.png');
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  background-repeat: no-repeat;
+}
 
 .category-card {
   background: #fff;
@@ -440,6 +447,9 @@ textarea:focus {
 
 /* =================Features Section End============================ */
 /* =================Featured Course Section Start============================ */
+/* #featured-course-section{
+   
+} */
 .featured-course-section .section-title {
   text-align: left;
 }
@@ -672,27 +682,7 @@ textarea:focus {
   font-weight: 700;
 }
 /* =================Counter Section End============================ */
-/* =================Testimonial Section Start============================ */
-/* .single-testimonial {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  height: 100%;
-}
-.reviews i {
-  color: #fbc02d;
-  margin-right: 3px;
-}
-.testimonial-footer img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-.swiper {
-  padding: 20px 10px;
-} */
-/* ==== */
+/* =================Testimonial Section Start============================ */ 
 .testimonials-section {
   padding: 60px 0;
   background: url('../assets/images/testimonial_bg.png');
@@ -722,7 +712,7 @@ textarea:focus {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* ensures footer stays at bottom */
+  justify-content: space-between;  
   height: 100%;
 } 
 
@@ -735,7 +725,7 @@ textarea:focus {
 }
 
 .single-testimonial p {
-  flex: 1; /* grow to keep footer aligned */
+  flex: 1;  
   margin: 0 0 18px 0;
   line-height: 1.55;
 }
@@ -790,7 +780,7 @@ textarea:focus {
 .trainer-section{
   overflow: hidden;
 }
-.teacher-card {
+/* .teacher-card {
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -805,7 +795,52 @@ textarea:focus {
 
 .teacher-img img {
   transition: transform 0.4s ease;
+} */
+
+.teacher-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
 }
+
+.teacher-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.teacher-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* New overlay styles */
+.teacher-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.teacher-card:hover .teacher-overlay {
+  opacity: 1;
+}
+
+.teacher-card:hover .teacher-img img {
+  transform: scale(1.05);  
+}
+
+
+/* ===== */
 
 .teacher-card:hover .teacher-img img {
   transform: scale(1.0);
@@ -820,8 +855,10 @@ textarea:focus {
   justify-content: center;
   gap: 15px;
   padding: 10px 0; 
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: var(--primary-color);
   transition: bottom 0.4s ease;
+  z-index: 1000;
 }
 
 .teacher-card:hover .social-icons {
@@ -839,15 +876,145 @@ textarea:focus {
 }
 
 /* =================Trainer Section End============================ */
+/* =================blog Section Start============================ */
+.blog-section{ 
+  overflow: hidden;
+}
+.single-blog {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.single-blog:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  /* transform: translateY(-5px); */
+}
+
+.blog-img {
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.single-blog:hover .blog-img img {
+  transform: scale(1.08) rotate(1.5deg);
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.author {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author i{
+  color:var(--button-color);
+  margin-right: 5px;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.blog-title a:hover {
+  color: var(--sub-text-color);
+}
+
+.blog-read-more a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--button-color);
+  transition: text-decoration 0.3s ease;
+}
+
+.blog-read-more a:hover {
+  text-decoration: underline;
+}
+
+/* =================blog Section End============================ */
+/* =================Subscriber-area Section Start============================ */
+.subscriber-area {
+  background-image: url('../assets/images/subscribe-bg.png'); /* Change to your image path */
+  background-size: cover;          /* Make sure image covers entire area */
+  background-position: center;     /* Center the image */
+  background-repeat: no-repeat;    /* Prevent image repetition */
+  background-attachment: scroll;    /* Optional: gives a parallax effect */
+  padding: 100px 60px;                 /* Adjust top/bottom spacing */
+  position: relative;
+  z-index: 100;
+  color: #fff;  
+  border-radius: 10px;
+  margin-bottom: -100px;                
+}
+.subscribe-text{
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 700;
+}
+.subscriber-mail-box {
+  display: flex;
+  max-width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.subscriber-mail-box input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  min-width: 0;
+}
+
+.subscriber-mail-box button {
+  padding: 12px 24px;
+  background-color: var(--button-color); /* or your theme color */
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscriber-mail-box button:hover {
+  background-color: var(--primary-color); /* darker shade for hover */
+}
+
+
+/* =================Subscriber-area Section End============================ */
 /* =================Footer Section Start============================ */
 .footer-section {
   background-color: #1c1f26;
   position: relative;
-  overflow: hidden;
+  padding-top: 200px; 
+  z-index: 10;
 }
 
 .footer-bg-img {
-  background-image: url("../assets/images/hero_area.png"); /* replace with your background image */
+  background-image: url("../assets/images/hero_area.png");  
   background-size: cover;
   background-position: center;
   opacity: 0.08;
@@ -890,14 +1057,14 @@ textarea:focus {
   color: #ccc;
 }
 
-.social-icons a {
+.footer-social-icons a {
   color: #ddd;
   font-size: 1rem;
   margin-right: 1rem;
   transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
+.footer-social-icons a:hover {
   color: #fff;
 }
 
