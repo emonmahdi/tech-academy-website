@@ -559,6 +559,14 @@ textarea:focus {
   color: #fff;
 }
 
+.more-course-btn i{
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.more-course-btn:hover i{
+  margin-left: 25px;
+}
+
 /* =================Featured Course Section End============================ */
 /* =================Footer Section Start============================ */
 .footer-section {
