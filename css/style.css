@@ -127,7 +127,8 @@ textarea:focus {
 #counter-section,
 #trainer-section,
 #blog-section,
-#course-details-header {
+#course-details-header,
+#contact-section {
   padding: 60px 0;
 }
 .section-title {
@@ -1662,3 +1663,37 @@ textarea:focus {
 /* ---------blog page style end---- */
 
 /* =================Blog Details Page Style End============================ */
+/* =================About Page Style Start============================ */
+#our-story{
+  padding:60px 0;
+}
+#our-story .our-story-img {
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our-story .our-story-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.about-our-story-heading{
+  color: var(--heading-text-color);
+  font-size: 34px;
+  font-weight: 700;
+}
+.sub-about-heading{
+  color:var(--button-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#counter-section-about-page{
+  padding:20px 0;
+}
+/* =================About Page Style End============================ */
+/* =================Contact Page Style Start============================ */
+.left-contact-img img{
+  border-radius: 5px;
+}
+/* =================Contact Page Style End============================ */
