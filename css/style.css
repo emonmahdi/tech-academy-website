@@ -1696,4 +1696,24 @@ textarea:focus {
 .left-contact-img img{
   border-radius: 5px;
 }
+.contact-address i{
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  background-color: var(--button-color);
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  color:#fff;
+}
+.contact-address h4, .contact-address p{
+  margin-bottom: 0;
+}
+.contact-address h4{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contact-address p{
+  color:var(--light-text-color)
+}
 /* =================Contact Page Style End============================ */
