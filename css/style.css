@@ -941,7 +941,7 @@ textarea:focus {
 .blog-title a:hover {
   color: var(--sub-text-color);
 }
-.sub-heading-text{
+.sub-heading-text {
   font-size: 18px;
 }
 
@@ -1122,20 +1122,20 @@ textarea:focus {
   font-weight: 700;
   font-size: 16px;
 }
-.author-name span{
+.author-name span {
   font-size: 14px;
-  color:var(--light-text-color);
+  color: var(--light-text-color);
   font-weight: 500;
 }
 .course-title-text h2 {
   color: var(--heading-text-color);
   font-size: 25px;
-  padding: 10px 0;;
+  padding: 10px 0;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 .short-text-top-author {
-  color:var(--heading-text-color);
+  color: var(--heading-text-color);
   font-size: 18px;
   font-weight: bold;
 }
@@ -1250,15 +1250,15 @@ textarea:focus {
 .accordion-button:not(.collapsed) .fa-angle-down {
   transform: rotate(180deg);
 }
-.course-tags li{
+.course-tags li {
   display: inline-block;
   list-style: none;
   padding: 5px 15px;
-  border:1px solid #ddd;
+  border: 1px solid #ddd;
   margin-right: 10px;
 }
-  
-/* Review Container */ 
+
+/* Review Container */
 
 /* Heading */
 .course-review-heading {
@@ -1378,11 +1378,10 @@ textarea:focus {
 }
 
 /* Submit Button */
-.write-review button { 
+.write-review button {
   display: block;
   transition: background-color 0.2s ease;
 }
- 
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -1396,7 +1395,6 @@ textarea:focus {
     grid-column: span 1;
   }
 }
-
 
 /* =sidebar */
 
@@ -1443,7 +1441,7 @@ textarea:focus {
 /* =================Blog Details Page Style Start============================ */
 .breadcrumb-section {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('../assets/images/page-top-bg.jpg') no-repeat center center / cover;
+    url("../assets/images/page-top-bg.jpg") no-repeat center center / cover;
   padding: 80px 0;
   position: relative;
   color: #fff;
@@ -1475,48 +1473,49 @@ textarea:focus {
   transition: color 0.2s ease-in-out;
 }
 
-.breadcrumb-list li a:hover, .breadcrumb-list li.active {
+.breadcrumb-list li a:hover,
+.breadcrumb-list li.active {
   text-decoration: underline;
   color: var(--button-color); /* Optional highlight color */
 }
 
 /* ---------blog page style start---- */
- #single-blog-details{
-  padding:50px 0;
+#single-blog-details {
+  padding: 50px 0;
   overflow: hidden;
- }
+}
 #single-blog-details .blog-title {
   font-size: 30px;
   font-weight: 700;
   color: var(--heading-text-color);
   margin-bottom: 15px;
 }
- .blog-liststyle{
+.blog-liststyle {
   margin: 20px 0;
   padding: 0;
- }
- .blog-liststyle li{
+}
+.blog-liststyle li {
   list-style: none;
   line-height: 1.9;
- }
- .blog-liststyle li i{
+}
+.blog-liststyle li i {
   color: var(--sub-text-color);
   margin-right: 5px;
- }
- .blog-sub-images{
+}
+.blog-sub-images {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:30px 0;
- }
- .date-category p {
-  color:var(--primary-color);
+  margin: 30px 0;
+}
+.date-category p {
+  color: var(--primary-color);
   font-weight: 700;
- }
- .category-type-text{
-  color:var(--button-color)
- }
- .image-wrapper {
+}
+.category-type-text {
+  color: var(--button-color);
+}
+.image-wrapper {
   width: 100%;
   height: 250px; /* You can adjust this height */
   overflow: hidden;
@@ -1582,7 +1581,7 @@ textarea:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
-.popular-post{
+.popular-post {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -1607,17 +1606,16 @@ textarea:focus {
   font-weight: 600;
   line-height: 1.3;
 }
-.post-title a{
+.post-title a {
   color: var(--primary-color);
 }
-.post-title a:hover{
+.post-title a:hover {
   color: var(--sub-text-color);
 }
 
 .popular-post-content {
   flex: 1;
 }
-
 
 .all-categories {
   background-color: #fff;
@@ -1626,7 +1624,8 @@ textarea:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.title-popular-post, .title-popular-categories {
+.title-popular-post,
+.title-popular-categories {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 15px;
@@ -1676,8 +1675,8 @@ textarea:focus {
 
 /* =================Blog Details Page Style End============================ */
 /* =================About Page Style Start============================ */
-#our-story{
-  padding:60px 0;
+#our-story {
+  padding: 60px 0;
 }
 #our-story .our-story-img {
   border-radius: 5px;
@@ -1690,25 +1689,25 @@ textarea:focus {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-.about-our-story-heading{
+.about-our-story-heading {
   color: var(--heading-text-color);
   font-size: 34px;
   font-weight: 700;
 }
-.sub-about-heading{
-  color:var(--button-color);
+.sub-about-heading {
+  color: var(--button-color);
   font-size: 16px;
   margin-bottom: 5px;
 }
-#counter-section-about-page{
-  padding:20px 0;
+#counter-section-about-page {
+  padding: 20px 0;
 }
 /* =================About Page Style End============================ */
 /* =================Contact Page Style Start============================ */
-.left-contact-img img{
+.left-contact-img img {
   border-radius: 5px;
 }
-.contact-address i{
+.contact-address i {
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -1716,17 +1715,18 @@ textarea:focus {
   text-align: center;
   display: inline-block;
   border-radius: 5px;
-  color:#fff;
+  color: #fff;
 }
-.contact-address h4, .contact-address p{
+.contact-address h4,
+.contact-address p {
   margin-bottom: 0;
 }
-.contact-address h4{
+.contact-address h4 {
   font-size: 18px;
   margin-bottom: 5px;
 }
-.contact-address p{
-  color:var(--light-text-color)
+.contact-address p {
+  color: var(--light-text-color);
 }
 /* =================Contact Page Style End============================ */
 /* =================Single Category Page Style Start============================ */
@@ -1742,3 +1742,80 @@ textarea:focus {
 }
 
 /* =================Single Category Page Style End============================ */
+/* =================Registration Page Style Start============================ */
+#registration-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading-text-color);
+  margin-bottom: 25px;
+}
+
+.form-label {
+  color: var(--sub-title-color);
+  font-weight: 500;
+}
+
+.form-control {
+  border: 0 solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  /* border-left: 1px solid var(--primary-color); */
+  /* border-right: 1px solid var(--primary-color); */
+  border-radius: 0;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: var(--sub-title-color);
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--button-color);
+  outline: none;
+  box-shadow: none;
+}
+
+.already-registered-text {
+  font-size: 15px;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+}
+
+.already-registered-text .login-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.already-registered-text .login-link:hover {
+  color: var(--button-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+}
+/* =================Registration Page Style End============================ */

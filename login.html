@@ -75,7 +75,7 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item ms-lg-3">
-                <a href="login.html" class="btn btn-enroll">Login </a>
+                <a href="#" class="btn btn-enroll">Login / Registration</a>
               </li>
             </ul>
           </div>
@@ -87,120 +87,62 @@
       <div class="breadcrumb-overlay">
         <div class="container">
           <div class="content-breadcrumb text-center text-white">
-            <h3 class="mb-2">Contact</h3>
+            <h3 class="mb-2">Login</h3>
             <ul class="breadcrumb-list d-flex justify-content-center gap-2">
               <li><a href="/">Home</a></li>
               <li>/</li>
-              <li class="active">Contact</li>
+              <li class="active">Login</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+    <!-- Registration Form Start -->
 
-    <!-- Page Top Header Breadcrumb End-->
-    <!---------------- Contact section Start ----------------->
-    <section id="contact-section">
+    <section id="registration-section">
       <div class="container">
-        <div class="contact-address-map my-4">
-          <div class="section-title">
-            <h6>Contact</h6>
-            <h2>Get in touch with us</h2>
-          </div>
-          <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-              <div class="contact-address">
-                <!-- single items address Phone -->
-                <div class="d-flex align-items-center gap-4 mb-4">
-                  <div>
-                    <span><i class="fa-solid fa-phone-volume"></i></span>
-                  </div>
-                  <div>
-                    <h4>Call us on: +03601 885399</h4>
-                    <p>Our office hours are Monday – Friday, 9 am-6 pm</p>
-                  </div>
-                </div>
-                <!-- single items address Email -->
-                <div class="d-flex align-items-center gap-4 mb-4">
-                  <div>
-                    <span><i class="fa-solid fa-envelope"></i></span>
-                  </div>
-                  <div>
-                    <h4>Our Location</h4>
-                    <p>70-80 Upper St Norwich NR2 1LT</p>
-                  </div>
-                </div>
-                <!-- single items address Location -->
-                <div class="d-flex align-items-center gap-4 mb-4">
-                  <div>
-                    <span><i class="fa-solid fa-location-dot"></i></span>
-                  </div>
-                  <div>
-                    <h4>Call us on: +03601 885399</h4>
-                    <p>Our office hours are Monday – Friday, 9 am-6 pm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- Google Map -->
-              <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29209.84401317394!2d90.3370605!3d22.7010025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375578cf30f1aa01%3A0x9d777dd77d1561d6!2sBarisal!5e0!3m2!1sen!2sbd!4v1687607459067!5m2!1sen!2sbd"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <div class="section-title">
-            <h6>Sent Us a Message</h6>
-            <h2>We will Answer all your Questions</h2>
-          </div>
-          <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-              <div class="left-contact-img">
-                <img
-                  src="assets/images/contact_1.jpg"
-                  class="img-fluid"
-                  alt=""
+        <div class="row justify-content-center">
+          <div class="form-container">
+            <h3 class="form-title">
+              <img src="assets/images/logo2-black.png" width="120" alt="" />
+            </h3>
+            <p class="form-title text-center fw-bold">Login</p>
+            <form id="registrationForm">
+              <div class="mb-3">
+                <!-- <label for="name" class="form-label">Full Name</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your full name"
+                  required
                 />
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="right-contact-form">
-                <div class="mb-3">
-                  <input type="text" placeholder="Name" class="form-control" />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    class="form-control"
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    name="message"
-                    id="message"
-                    class="form-control"
-                    rows="5"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <button class="btn btn-enroll">Send Message</button>
+
+              <div class="mb-3">
+                <!-- <label for="phone" class="form-label">Phone Number</label> -->
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
               </div>
-            </div>
+
+              <div class="mb-3 text-center already-registered-text">
+                Don't have an account?
+                <a href="registration.html" class="login-link">Sign up here</a>
+              </div>
+
+              <button type="submit" class="btn btn-enroll w-100">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!---------------- Contact section End ----------------->
+    <!-- Registration Form End -->
+
     <!-- Subscrib section start -->
     <section id="subscrib-section">
       <div class="container">
