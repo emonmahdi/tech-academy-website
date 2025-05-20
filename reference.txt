@@ -8,8 +8,8 @@ Pending task:
 
 1. Category single courses page. - Done
 2. Buy Now - Popup form the enroll options
-3. User Dashboard - 
-4. Payment Processing Popup form
-5. Login and Registration page. 
+3. User Dashboard - Done.
+4. Payment Processing Popup form - 
+5. Login and Registration page. - Done
 6. Course Modeul - Open class popup video
 7. 
