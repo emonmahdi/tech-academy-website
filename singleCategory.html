@@ -87,11 +87,11 @@
       <div class="breadcrumb-overlay">
         <div class="container">
           <div class="content-breadcrumb text-center text-white">
-            <h3 class="mb-2">Courses</h3>
+            <h3 class="mb-2">Category</h3>
             <ul class="breadcrumb-list d-flex justify-content-center gap-2">
               <li><a href="/">Home</a></li>
               <li>/</li>
-              <li class="active">Courses</li>
+              <li class="active">Courses Category Title</li>
             </ul>
           </div>
         </div>
@@ -102,53 +102,43 @@
     <section class="featured-course-section" id="featured-course-section">
       <div class="container">
         <div class="section-title">
-          <h6>All Courses</h6>
-          <h2>Pick a Course to Get Started</h2>
+          <h6>Courses Category</h6>
+          <h2>Category Title - Web Development</h2>
         </div>
 
         <!-- filtering Options -->
         <div class="row d-flex align-items-center mb-4">
-          <div class="col-md-10">
+          <div class="col-md-6">
             <!-- Filter Bar -->
             <div class="filter-bar row g-3">
-              <div class="col-md-3">
-                <select class="form-select" id="categoryFilter">
+              <div class="col-md-4 col-sm-6 col-12">
+                <select
+                  class="form-select shadow-sm category-select"
+                  id="categoryFilter"
+                >
                   <option value="">All Categories</option>
                   <option value="Development">Development</option>
                   <option value="Design">Design</option>
                   <option value="Marketing">Marketing</option>
                 </select>
               </div>
-              <div class="col-md-3">
-                <select class="form-select" id="priceFilter">
-                  <option value="">All Prices</option>
-                  <option value="Free">Free</option>
-                  <option value="Paid">Paid</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select class="form-select" id="ratingFilter">
-                  <option value="">All Ratings</option>
-                  <option value="5">5 Star</option>
-                  <option value="4">4 Star & Up</option>
-                  <option value="3">3 Star & Up</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select class="form-select" id="levelFilter">
-                  <option value="">All Levels</option>
-                  <option value="Beginner">Beginner</option>
-                  <option value="Intermediate">Intermediate</option>
-                  <option value="Advanced">Advanced</option>
-                </select>
-              </div>
             </div>
           </div>
-          <div class="col-md-2">
-            <button class="btn btn-enroll w-100 d-block">Search</button>
+          <div class="col-md-6">
+            <!-- input search category -->
+            <div class="input-group shadow rounded">
+              <input
+                type="text"
+                class="form-control form-control"
+                placeholder="Search courses..."
+                aria-label="Search"
+              />
+              <button class="btn btn-enroll" type="button">Search</button>
+            </div>
           </div>
         </div>
-        <div class="row g-4">
+        <!-- Course Card -->
+        <div class="row g-4 mt-4">
           <!-- Card 1 -->
           <div class="col-md-6 col-lg-4">
             <div
@@ -195,8 +185,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Duplicate the card 5 more times with slight changes -->
           <!-- Card 2 -->
           <div class="col-md-6 col-lg-4">
             <div
@@ -227,202 +215,6 @@
                 </div>
                 <p>
                   Learn Figma tools and real-world UI projects step-by-step.
-                </p>
-                <hr />
-                <div
-                  class="course-btns mt-auto d-flex justify-content-between align-items-center"
-                >
-                  <a
-                    href="courseDetails.html"
-                    class="view-details-btn btn-sm rounded-pill"
-                    ><i class="fas fa-eye me-1"></i> View Course</a
-                  >
-                  <a href="#" class="btn-enroll btn-sm rounded-pill"
-                    ><i class="fas fa-user-plus me-1"></i> Enroll</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="course-card shadow-sm rounded-4 overflow-hidden bg-white h-100 position-relative"
-            >
-              <span
-                class="badge position-absolute top-0 end-0 m-3 bg-danger text-white rounded-pill px-3 py-1 small z-1"
-                >Backend</span
-              >
-              <img
-                src="assets/images/course/course3.jpg"
-                class="img-fluid w-100"
-                alt="Course 3"
-              />
-              <div class="p-4 d-flex flex-column h-100">
-                <h5 class="fw-semibold text-truncate-2 mb-2">
-                  <a href="courseDetails.html">Node.js & Express Mastery</a>
-                </h5>
-                <p class="text-muted small mb-1">By Alex Lee</p>
-                <div
-                  class="course-icons-details d-flex justify-content-between text-muted small mb-2"
-                >
-                  <span><i class="fas fa-clock me-1"></i>15h</span>
-                  <span
-                    ><i class="fas fa-user-graduate me-1"></i>2.3k
-                    students</span
-                  >
-                  <span><i class="fas fa-star text-warning me-1"></i>4.9</span>
-                </div>
-                <p>Build REST APIs and backend services using Express.js.</p>
-                <hr />
-                <div
-                  class="course-btns mt-auto d-flex justify-content-between align-items-center"
-                >
-                  <a
-                    href="courseDetails.html"
-                    class="view-details-btn btn-sm rounded-pill"
-                    ><i class="fas fa-eye me-1"></i> View Course</a
-                  >
-                  <a href="#" class="btn-enroll btn-sm rounded-pill"
-                    ><i class="fas fa-user-plus me-1"></i> Enroll</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="course-card shadow-sm rounded-4 overflow-hidden bg-white h-100 position-relative"
-            >
-              <span
-                class="badge position-absolute top-0 end-0 m-3 bg-warning text-dark rounded-pill px-3 py-1 small z-1"
-                >Marketing</span
-              >
-              <img
-                src="assets/images/course/course4.jpg"
-                class="img-fluid w-100"
-                alt="Course 4"
-              />
-              <div class="p-4 d-flex flex-column h-100">
-                <h5 class="fw-semibold text-truncate-2 mb-2">
-                  <a href="courseDetails.html">
-                    Digital Marketing Crash Course</a
-                  >
-                </h5>
-                <p class="text-muted small mb-1">By Sarah Khan</p>
-                <div
-                  class="course-icons-details d-flex justify-content-between text-muted small mb-2"
-                >
-                  <span><i class="fas fa-clock me-1"></i>8h</span>
-                  <span
-                    ><i class="fas fa-user-graduate me-1"></i>670 students</span
-                  >
-                  <span><i class="fas fa-star text-warning me-1"></i>4.6</span>
-                </div>
-                <p>
-                  Understand SEO, SEM, email campaigns, and analytics tools.
-                </p>
-                <hr />
-                <div
-                  class="course-btns mt-auto d-flex justify-content-between align-items-center"
-                >
-                  <a
-                    href="courseDetails.html"
-                    class="view-details-btn btn-sm rounded-pill"
-                    ><i class="fas fa-eye me-1"></i> View Course</a
-                  >
-                  <a href="#" class="btn-enroll btn-sm rounded-pill"
-                    ><i class="fas fa-user-plus me-1"></i> Enroll</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="course-card shadow-sm rounded-4 overflow-hidden bg-white h-100 position-relative"
-            >
-              <span
-                class="badge position-absolute top-0 end-0 m-3 bg-info text-white rounded-pill px-3 py-1 small z-1"
-                >Graphic Design</span
-              >
-              <img
-                src="assets/images/course/course5.jpg"
-                class="img-fluid w-100"
-                alt="Course 5"
-              />
-              <div class="p-4 d-flex flex-column h-100">
-                <h5 class="fw-semibold text-truncate-2 mb-2">
-                  <a href="courseDetails.html">Adobe Photoshop Essentials</a>
-                </h5>
-                <p class="text-muted small mb-1">By Mark Visual</p>
-                <div
-                  class="course-icons-details d-flex justify-content-between text-muted small mb-2"
-                >
-                  <span><i class="fas fa-clock me-1"></i>9h</span>
-                  <span
-                    ><i class="fas fa-user-graduate me-1"></i>800 students</span
-                  >
-                  <span><i class="fas fa-star text-warning me-1"></i>4.5</span>
-                </div>
-                <p>
-                  Get hands-on with tools, layers, filters, and creative
-                  workflows.
-                </p>
-                <hr />
-                <div
-                  class="course-btns mt-auto d-flex justify-content-between align-items-center"
-                >
-                  <a
-                    href="courseDetails.html"
-                    class="view-details-btn btn-sm rounded-pill"
-                    ><i class="fas fa-eye me-1"></i> View Course</a
-                  >
-                  <a href="#" class="btn-enroll btn-sm rounded-pill"
-                    ><i class="fas fa-user-plus me-1"></i> Enroll</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="course-card shadow-sm rounded-4 overflow-hidden bg-white h-100 position-relative"
-            >
-              <span
-                class="badge position-absolute top-0 end-0 m-3 bg-dark text-white rounded-pill px-3 py-1 small z-1"
-                >AI/ML</span
-              >
-              <img
-                src="assets/images/course/course6.jpg"
-                class="img-fluid w-100"
-                alt="Course 6"
-              />
-              <div class="p-4 d-flex flex-column h-100">
-                <h5 class="fw-semibold text-truncate-2 mb-2">
-                  <a href="courseDetails.html">AI with Python for Beginners</a>
-                </h5>
-                <p class="text-muted small mb-1">By Emily Watson</p>
-                <div
-                  class="course-icons-details d-flex justify-content-between text-muted small mb-2"
-                >
-                  <span><i class="fas fa-clock me-1"></i>18h</span>
-                  <span
-                    ><i class="fas fa-user-graduate me-1"></i>1.8k
-                    students</span
-                  >
-                  <span><i class="fas fa-star text-warning me-1"></i>4.9</span>
-                </div>
-                <p>
-                  Start your AI journey by learning Python, data science &
-                  models.
                 </p>
                 <hr />
                 <div

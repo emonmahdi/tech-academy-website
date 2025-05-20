@@ -523,6 +523,7 @@ textarea:focus {
   background-color: transparent;
   border: 1px solid var(--button-color);
   overflow: hidden;
+  border-radius: 5px;
   z-index: 1;
   transition: color 0.5s ease;
 }
@@ -1436,6 +1437,7 @@ textarea:focus {
   padding: 80px 0;
   position: relative;
   color: #fff;
+  overflow: hidden;
 }
 
 .breadcrumb-overlay {
@@ -1717,3 +1719,16 @@ textarea:focus {
   color:var(--light-text-color)
 }
 /* =================Contact Page Style End============================ */
+/* =================Single Category Page Style Start============================ */
+.category-select {
+  width: 100% !important;
+}
+
+/* Add bottom margin for mobile screens */
+@media (max-width: 767.98px) {
+  .category-select {
+    margin-bottom: 1rem;
+  }
+}
+
+/* =================Single Category Page Style End============================ */
