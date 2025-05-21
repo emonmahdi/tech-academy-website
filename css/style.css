@@ -1262,6 +1262,7 @@ textarea:focus {
   padding: 5px 15px;
   border: 1px solid #ddd;
   margin-right: 10px;
+  margin-bottom: 15px;
 }
 
 /* course module style */
@@ -2003,6 +2004,9 @@ textarea:focus {
   border-right:2px solid #ddd;
   padding:0px 10px;
   text-align: center;
+}
+.course-rating-students-hours span i{
+  color:#FFA713;
 }
 .meta-item {
   margin: 15px 0;
