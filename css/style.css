@@ -464,6 +464,12 @@ textarea:focus {
   transition: transform 0.4s ease;
 }
 
+.course-title-heading {
+  text-decoration: none;
+  color: var(--heading-text-color);
+  font-size: 24px;
+}
+
 .course-card:hover img {
   transform: scale(1.05);
 }
@@ -1506,6 +1512,10 @@ textarea:focus {
   transform: scale(1.1);
 }
 
+.course-video-link{
+  color:var(--heading-text-color)
+}
+
 /* =================Course Details Page Style End============================ */
 /* =================Blog Details Page Style Start============================ */
 .breadcrumb-section {
@@ -1916,3 +1926,136 @@ textarea:focus {
   }
 }
 /* =================Registration Page Style End============================ */
+/* =================Course Video Page Style Start========================== */
+.course-page {
+  padding: 30px 15px;
+}
+
+.video-player {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+}
+
+.course-sidebar {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  background: white;
+  /* border-left: 4px solid var(--primary-color); */
+}
+
+.accordion-button {
+  background-color: #fff;
+  color: var(--heading-text-color);
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: rgba(40, 120, 235, 0.1);
+}
+
+.accordion-body .video-link {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.accordion-body .video-link:hover {
+  color: var(--button-color);
+}
+
+.video-time {
+  font-size: 0.85rem;
+  color: var(--light-text-color);
+}
+
+.module-title-icon {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+.video-meta {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  /* border-left: 4px solid var(--button-color); */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.video-meta h5 {
+  color: var(--heading-text-color);
+  margin-bottom: 15px;
+}
+#currentVideoTitle{
+  color:var(--heading-text-color);
+  font-size: 35px;
+  font-weight: 500;
+}
+.course-rating-students-hours{
+  border-right:2px solid #ddd;
+  padding:0px 10px;
+  text-align: center;
+}
+.meta-item {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.meta-item span {
+  font-weight: 600;
+  color: var(--sub-title-color);
+}
+
+.course-sidebar h5,
+.course-sidebar h6 {
+  color: var(--heading-text-color);
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--button-color);
+  text-decoration: none;
+}
+.course-video-resources ul{
+  padding: 0;
+  margin: 0 20px;
+}
+.course-video-resources ul li{
+  list-style: none;
+}
+.course-video-resources ul li a{
+  color:var(--heading-text-color);
+  display: inline-block;
+  padding: 2px 0;
+
+  &:hover{
+    color:var(--button-color)
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  .video-player {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-player {
+    height: 200px;
+  }
+}
+/* =================Course Video Page Style End============================ */
