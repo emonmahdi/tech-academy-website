@@ -28,6 +28,8 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: #f8f9fa;
   color: #343a40;
+  max-width: 1920px;
+  margin: 0 auto;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
 }
@@ -148,11 +150,58 @@ textarea:focus {
   letter-spacing: -0.2px;
 }
 /* ======================Common Section Styles End====================== */
+
+/* ======================Top Bar Menu Start====================== */
+.top-bar-menu {
+  background-color: #f1f5f9;
+}
+.top-bar-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.top-bar-menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 20px;
+}
+.top-bar-menu ul li a {
+  text-decoration: none;
+  color: var(--heading-text-color);
+  font-weight: 600;
+}
+.top-bar-menu ul li:nth-child(2) {
+  padding: 10px 20px;
+  padding-right: 0;
+}
+.phonde-numbers i,
+.login-reg-topbar i {
+  color: var(--button-color);
+  margin-right: 5px;
+}
+.login-reg-topbar {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .login-reg-topbar,
+  .phonde-numbers {
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .top-bar-menu {
+    display: none;
+  }
+}
 /* ======================Navbar Start====================== */
 .navbar-brand {
   font-weight: bold;
   color: var(--primary-color);
   font-size: 1.5rem;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--sub-text-color);
+  font-weight: 500;
 }
 .logo-img {
   height: 40px; /* standard navbar height */
@@ -594,28 +643,54 @@ textarea:focus {
 /* =================Membership Section Start============================ */
 .membership-section {
   overflow: hidden;
+  position: relative;
   background: #f8f9fa;
+  z-index: -100;
 }
+.membership-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(125deg, #7057fa, #61b7ff);
+  z-index: 1000;
+}
+.membership-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #120f2d;
+  z-index: 100;
+} 
 
 /* Left column background */
 .left-column {
-  background: linear-gradient(125deg, #7057fa, #61b7ff);
+  /* background: linear-gradient(125deg, #7057fa, #61b7ff); */
   color: #fff;
   padding: 80px 0;
+  position: relative;
+  z-index: 1000;
 }
 
 /* Right column background */
 .right-column {
-  background-color: #120f2d;
+  /* background-color: #120f2d; */
   padding-left: 3rem;
-  padding: 80px 0;
+  padding: 80px 30px;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
 }
 .membership-section {
   width: 100%;
 }
 .left-membership-content {
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
 }
 
 /* Feature cards grid */
@@ -675,6 +750,21 @@ textarea:focus {
     grid-template-columns: 1fr;
     margin-left: 0;
   }
+}
+@media (max-width: 480px) {
+  .membership-section::before {
+    width: 100%; 
+  }
+  .membership-section::after {
+    width: 100%; 
+  }
+  .left-column { 
+  padding: 30px 0;  
+}
+.right-column { 
+  padding: 30px 30px; 
+}
+  
 }
 
 /* =================Membership Section End============================ */
@@ -1513,8 +1603,8 @@ textarea:focus {
   transform: scale(1.1);
 }
 
-.course-video-link{
-  color:var(--heading-text-color)
+.course-video-link {
+  color: var(--heading-text-color);
 }
 
 /* =================Course Details Page Style End============================ */
@@ -1995,18 +2085,18 @@ textarea:focus {
   color: var(--heading-text-color);
   margin-bottom: 15px;
 }
-#currentVideoTitle{
-  color:var(--heading-text-color);
+#currentVideoTitle {
+  color: var(--heading-text-color);
   font-size: 35px;
   font-weight: 500;
 }
-.course-rating-students-hours{
-  border-right:2px solid #ddd;
-  padding:0px 10px;
+.course-rating-students-hours {
+  border-right: 2px solid #ddd;
+  padding: 0px 10px;
   text-align: center;
 }
-.course-rating-students-hours span i{
-  color:#FFA713;
+.course-rating-students-hours span i {
+  color: #ffa713;
 }
 .meta-item {
   margin: 15px 0;
@@ -2033,22 +2123,21 @@ a:hover {
   color: var(--button-color);
   text-decoration: none;
 }
-.course-video-resources ul{
+.course-video-resources ul {
   padding: 0;
   margin: 0 20px;
 }
-.course-video-resources ul li{
+.course-video-resources ul li {
   list-style: none;
 }
-.course-video-resources ul li a{
-  color:var(--heading-text-color);
+.course-video-resources ul li a {
+  color: var(--heading-text-color);
   display: inline-block;
   padding: 2px 0;
 
-  &:hover{
-    color:var(--button-color)
+  &:hover {
+    color: var(--button-color);
   }
-
 }
 
 @media (max-width: 991.98px) {
