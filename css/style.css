@@ -1165,7 +1165,7 @@ textarea:focus {
 }
 
 .footer-section ul li a:hover {
-  color: #fff;
+  color: var(--sub-text-color);
   text-decoration: underline;
 }
 
@@ -1182,7 +1182,7 @@ textarea:focus {
 }
 
 .footer-social-icons a:hover {
-  color: #fff;
+  color: var(--button-color);
 }
 
 /* =================Footer Section End============================ */
